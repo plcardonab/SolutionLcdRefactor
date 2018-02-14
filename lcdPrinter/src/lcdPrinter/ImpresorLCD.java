@@ -14,10 +14,7 @@ public class ImpresorLCD {
     private final int[] pf5;
     private String[][] matrizImpr;
 
-    static final String CARACTER_VERTICAL = "|";
-    static final String CARACTER_HORIZONTAL = "-";
-    static final String POSICION_X = "X";
-    static final String POSICION_Y = "Y";
+  
 
     // TODO code application logic here
     //String entrada = JOptionPane.showInputDialog("Digite el numero");
@@ -51,7 +48,7 @@ public class ImpresorLCD {
     private void adicionarLinea(String[][] matriz, int[] punto, String posFija,
             int size, String caracter) {
 
-        if (posFija.equalsIgnoreCase(POSICION_X)) 
+        if (posFija.equalsIgnoreCase(Constantes.POSICION_X)) 
         {
             for (int y = 1; y <= size; y++) 
             {
@@ -79,32 +76,32 @@ public class ImpresorLCD {
 
         switch (segmento) {
             case 1:
-                adicionarLinea(this.matrizImpr, this.pf1, POSICION_Y,
-                        this.size, CARACTER_VERTICAL);
+                adicionarLinea(this.matrizImpr, this.pf1, Constantes.POSICION_Y,
+                        this.size, Constantes.CARACTER_VERTICAL);
                 break;
             case 2:
-                adicionarLinea(this.matrizImpr, this.pf2, POSICION_Y,
-                        this.size, CARACTER_VERTICAL);
+                adicionarLinea(this.matrizImpr, this.pf2, Constantes.POSICION_Y,
+                        this.size, Constantes.CARACTER_VERTICAL);
                 break;
             case 3:
-                adicionarLinea(this.matrizImpr, this.pf5, POSICION_Y,
-                        this.size, CARACTER_VERTICAL);
+                adicionarLinea(this.matrizImpr, this.pf5, Constantes.POSICION_Y,
+                        this.size, Constantes.CARACTER_VERTICAL);
                 break;
             case 4:
-                adicionarLinea(this.matrizImpr, this.pf4, POSICION_Y,
-                        this.size, CARACTER_VERTICAL);
+                adicionarLinea(this.matrizImpr, this.pf4, Constantes.POSICION_Y,
+                        this.size, Constantes.CARACTER_VERTICAL);
                 break;
             case 5:
-                adicionarLinea(this.matrizImpr, this.pf1, POSICION_X,
-                        this.size, CARACTER_HORIZONTAL);
+                adicionarLinea(this.matrizImpr, this.pf1, Constantes.POSICION_X,
+                        this.size, Constantes.CARACTER_HORIZONTAL);
                 break;
             case 6:
-                adicionarLinea(this.matrizImpr, this.pf2, POSICION_X,
-                        this.size, CARACTER_HORIZONTAL);
+                adicionarLinea(this.matrizImpr, this.pf2, Constantes.POSICION_X,
+                        this.size, Constantes.CARACTER_HORIZONTAL);
                 break;
             case 7:
-                adicionarLinea(this.matrizImpr, this.pf3, POSICION_X,
-                        this.size, CARACTER_HORIZONTAL);
+                adicionarLinea(this.matrizImpr, this.pf3, Constantes.POSICION_X,
+                        this.size, Constantes.CARACTER_HORIZONTAL);
                 break;
             default:
                 break;
