@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class LCDTester {
 
-    static final String CADENA_FINAL = "0,0";
     static Scanner lector = new Scanner(System.in);
     
     public static void main(String[] args) {
@@ -32,10 +31,10 @@ public class LCDTester {
 				do {
 					System.out.print("Entrada: ");
 					comando = lector.next();
-					if (!comando.equalsIgnoreCase(CADENA_FINAL)) {
+					if (!comando.equalsIgnoreCase(Constantes.CADENA_FINAL)) {
 						listaComando.add(comando);
 					}
-				} while (!comando.equalsIgnoreCase(CADENA_FINAL));
+				} while (!comando.equalsIgnoreCase(Constantes.CADENA_FINAL));
 
 				ImpresorLCD impresorLCD = new ImpresorLCD();
 
